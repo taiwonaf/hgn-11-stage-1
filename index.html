@@ -4,51 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nafiu Taiwo: HGN 11 stage one task</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav></nav>
     <main>
       <div class="profile_container">
-        <img src="taiwonaf.jpg" alt="">
+        <img
+          src="taiwonaf_profile_img.png"
+          alt="taiwo nafiu profile picture"
+          data-testid="slackProfilePicture"
+        />
         <div class="profile_info_container">
           <div>
             <span>Slack name:</span>
-            <h1>Nafiu Taiwo Solomon</h1>
+            <h1 data-testid="slackDisplayName">taiwonaf</h1>
           </div>
           <div>
             <span>Slack email:</span>
-            <h1>nafiutaiwosolomon@gmail.com</h1>
+            <h1 data-testid="slackEmail">nafiutaiwosolomon@gmail.com</h1>
           </div>
           <div>
             <span>Current time in UTC:</span>
-            <h1 id="currentTime"></h1>
+            <h1 id="currentTime" data-testid="currentTimeUTC"></h1>
           </div>
           <div>
             <span>Current day:</span>
-            <h1 id="currentDay"></h1>
+            <h1 id="currentDay" data-testid="currentDay"></h1>
           </div>
         </div>
       </div>
       <div class="goal_container">
-        <h2>My texh goals for the next 2 years</h2>
+        <h2>My tech goals for the next 2 years</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse ea nisi excepturi consequatur praesentium sunt natus cupiditate, delectus rem odit quibusdam sapiente dolorum veritatis quam minus facilis laudantium sed!
+          I have been trying to break into the field of frontend development
+          professionaly for the past 3 years working with start ups and
+          freelancing, and I hoping to be able to collaborate professionaly with
+          more experienced developers in building excisting products. Therefore
+          in the next two years I want to spend it learning new things and using
+          the skills to build and collaborate on exciting projects even if I
+          have to learn new things .
         </p>
       </div>
       <div class="hng_container">
         <h2>HNG Links</h2>
         <ul>
-          <li><a href="https://hng.tech/learn">HGN learn</a></li>
-          <li><a href="http://keyword.dog/">Keyword Dog</a></li>
-          <li><a href="http://scrapeanyweb.site/">Scrapeanyweb</a></li>
+          <li>
+            <a href="https://hng.tech/learn" data-testid="hngLink">HGN learn</a>
+          </li>
+          <li>
+            <a href="http://keyword.dog/" data-testid="keywordLink"
+              >Keyword Dog</a
+            >
+          </li>
+          <li>
+            <a href="http://scrapeanyweb.site/" data-testid="scrapeanywebLink"
+              >Scrapeanyweb</a
+            >
+          </li>
         </ul>
       </div>
     </main>
-    <footer></footer>
-    <script src="index.js" ></script>
+    <footer>
+      <p>
+        Coded with ❤️ by <a href="htts://github.com/taiwonaf">Nafiu Taiwo</a>
+      </p>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
