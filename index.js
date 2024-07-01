@@ -13,4 +13,12 @@ const weekdays = [
 
 currentDay.textContent = weekdays[new Date().getUTCDay()];
 
-setInterval(() => (currentTime.textContent = new Date().toUTCString()), 1000);
+setInterval(() => {
+  currentTime.textContent = new Intl.DateTimeFormat("en-US", {
+    timeZone: "UTC",
+    hour12: true,
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  }).format(new Date());
+}, 1000);
